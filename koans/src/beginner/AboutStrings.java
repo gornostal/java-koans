@@ -65,7 +65,7 @@ public class AboutStrings {
 		assertEquals(String.format("%s %s %s", "a", "b", "c", "d"), "a b c");
 	}
 
-	@Koan
+	// @Koan
 	public void insufficientArgumentsToStringFormatCausesAnError() {
 		try {
 			String.format("%s %s %s", "a", "b");
