@@ -21,7 +21,7 @@ import com.sandwich.koan.Koan;
 
 
 public class AboutCollections {
-	
+
 	@Koan
 	public void usingAnArrayList() {
 		// List = interface
@@ -33,14 +33,14 @@ public class AboutCollections {
 		list.add("Chicken");
 		list.add("Dog");
 		list.add("Chicken");
-		assertEquals(list.get(0), __);
-		assertEquals(list.get(1), __);
-		assertEquals(list.get(2), __);
+		assertEquals(list.get(0), "Chicken");
+		assertEquals(list.get(1), "Dog");
+		assertEquals(list.get(2), "Chicken");
 	}
-	
+
 	@Koan
 	public void usingAQueue() {
-		// Queue = interface 
+		// Queue = interface
 		Queue<String> queue = new PriorityQueue<String>();
 					// PriorityQueue: simple queue implementation
 		queue.add("Cat");
@@ -52,7 +52,7 @@ public class AboutCollections {
 		assertEquals(queue.poll(), __);
 		assertEquals(queue.isEmpty(), __);
 	}
-	
+
 	@Koan
 	public void usingABasicSet() {
 		Set<String> set = new HashSet<String>();
@@ -64,7 +64,7 @@ public class AboutCollections {
 		assertEquals(set.contains("Cat"), __);
 		assertEquals(set.contains("Chicken"), __);
 	}
-	
+
 	@Koan
 	public void usingABasicMap() {
 		Map<String, String> map = new HashMap<String, String>();
@@ -77,7 +77,7 @@ public class AboutCollections {
 		assertEquals(map.containsValue("first value"), __);
 		assertEquals(map.get("first key"), __);
 	}
-	
+
 	@Koan
 	public void usingBackedArrayList() {
 		String[] array = {"a","b","c"};
@@ -88,7 +88,7 @@ public class AboutCollections {
 		assertEquals(list.get(0), __);
 		// Just think of it as quantum state teleportation...
 	}
-	
+
 	@Koan
 	public void usingBackedSubMap() {
 		TreeMap<String, String> map = new TreeMap<String, String>();
@@ -104,10 +104,10 @@ public class AboutCollections {
 		assertEquals(backedMap.size(), __);
 		assertEquals(map.size(), __);
 		assertEquals(map.containsKey("d"), __);
-		// Again: backed maps are just like those little quantum states 
+		// Again: backed maps are just like those little quantum states
 		// that are connected forever...
 	}
-	
+
 	@Koan
 	public void differenceBetweenOrderedAndSorted() {
 		TreeSet<String> sorted = new TreeSet<String>();
@@ -119,7 +119,7 @@ public class AboutCollections {
 		// Look at the different constructors for a TreeSet (or TreeMap)
 		// Ponder how you might influence the sort order. Hold that thought
 		// until you approach AboutComparison
-		
+
 		LinkedHashSet<String> ordered = new LinkedHashSet<String>();
 		ordered.add("c");
 		ordered.add("z");
